@@ -63,6 +63,9 @@ techmap -map [file join $generic_script_root {{ entry.techmap }}]
 opt -full
 clean
 
+# Transforms FF types with clock enable and/or synchronous reset into their base type
+dffunmap
+ 
 # print final report
 stat -width
 
